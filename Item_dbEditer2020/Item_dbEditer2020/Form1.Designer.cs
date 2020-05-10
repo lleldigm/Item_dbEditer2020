@@ -83,9 +83,35 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
             this.panelItemList.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelMainScript.SuspendLayout();
+            this.panelMainDb2.SuspendLayout();
             this.panelMainBase.SuspendLayout();
             this.panelMainBaseEquip.SuspendLayout();
             this.panelMainBaseCommon.SuspendLayout();
@@ -127,6 +153,31 @@
             // 
             // panelMainDb2
             // 
+            this.panelMainDb2.Controls.Add(this.label69);
+            this.panelMainDb2.Controls.Add(this.label68);
+            this.panelMainDb2.Controls.Add(this.label67);
+            this.panelMainDb2.Controls.Add(this.label66);
+            this.panelMainDb2.Controls.Add(this.label65);
+            this.panelMainDb2.Controls.Add(this.label64);
+            this.panelMainDb2.Controls.Add(this.label63);
+            this.panelMainDb2.Controls.Add(this.label62);
+            this.panelMainDb2.Controls.Add(this.label61);
+            this.panelMainDb2.Controls.Add(this.label60);
+            this.panelMainDb2.Controls.Add(this.label59);
+            this.panelMainDb2.Controls.Add(this.label58);
+            this.panelMainDb2.Controls.Add(this.label57);
+            this.panelMainDb2.Controls.Add(this.label56);
+            this.panelMainDb2.Controls.Add(this.label55);
+            this.panelMainDb2.Controls.Add(this.label54);
+            this.panelMainDb2.Controls.Add(this.label53);
+            this.panelMainDb2.Controls.Add(this.label52);
+            this.panelMainDb2.Controls.Add(this.label51);
+            this.panelMainDb2.Controls.Add(this.label50);
+            this.panelMainDb2.Controls.Add(this.label49);
+            this.panelMainDb2.Controls.Add(this.label48);
+            this.panelMainDb2.Controls.Add(this.label47);
+            this.panelMainDb2.Controls.Add(this.label46);
+            this.panelMainDb2.Controls.Add(this.label45);
             this.panelMainDb2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainDb2.Location = new System.Drawing.Point(233, 96);
             this.panelMainDb2.Name = "panelMainDb2";
@@ -630,6 +681,231 @@
             this.label44.TabIndex = 2;
             this.label44.Text = "EquipScript";
             // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(4, 0);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(49, 12);
+            this.label45.TabIndex = 0;
+            this.label45.Text = "item_db2";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(18, 22);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(134, 12);
+            this.label46.TabIndex = 1;
+            this.label46.Text = "転生による使用/装備許可";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(18, 52);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(41, 12);
+            this.label47.TabIndex = 2;
+            this.label47.Text = "転生前";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(79, 52);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(41, 12);
+            this.label48.TabIndex = 3;
+            this.label48.Text = "転生後";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(140, 53);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(29, 12);
+            this.label49.TabIndex = 4;
+            this.label49.Text = "養子";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(22, 90);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(134, 12);
+            this.label50.TabIndex = 5;
+            this.label50.Text = "場所による使用/装備制限";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(18, 122);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(73, 12);
+            this.label51.TabIndex = 6;
+            this.label51.Text = "通常フィールド";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(92, 122);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(25, 12);
+            this.label52.TabIndex = 7;
+            this.label52.Text = "PvP";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(142, 122);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(27, 12);
+            this.label53.TabIndex = 8;
+            this.label53.Text = "GvG";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(205, 121);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(19, 12);
+            this.label54.TabIndex = 9;
+            this.label54.Text = "PK";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(22, 151);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(64, 12);
+            this.label55.TabIndex = 10;
+            this.label55.Text = "ターボトラック";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(128, 151);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(81, 12);
+            this.label56.TabIndex = 11;
+            this.label56.Text = "テレポ禁止区域";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(24, 167);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(87, 12);
+            this.label57.TabIndex = 12;
+            this.label57.Text = "リターン禁止区域";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(129, 167);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(65, 12);
+            this.label58.TabIndex = 13;
+            this.label58.Text = "枝禁止区域";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(22, 188);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(96, 12);
+            this.label59.TabIndex = 14;
+            this.label59.Text = "ペナルティ無し区域";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(131, 188);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(95, 12);
+            this.label60.TabIndex = 15;
+            this.label60.Text = "ペナルティ有り区域";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(320, 31);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(70, 12);
+            this.label61.TabIndex = 16;
+            this.label61.Text = "その他の制限";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(322, 53);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(39, 12);
+            this.label62.TabIndex = 17;
+            this.label62.Text = "ドロップ";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(450, 53);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(32, 12);
+            this.label63.TabIndex = 18;
+            this.label63.Text = "カート";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(322, 89);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(29, 12);
+            this.label64.TabIndex = 19;
+            this.label64.Text = "売却";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(452, 88);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(53, 12);
+            this.label65.TabIndex = 20;
+            this.label65.Text = "購買露店";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(324, 121);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(29, 12);
+            this.label66.TabIndex = 21;
+            this.label66.Text = "倉庫";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(452, 120);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(29, 12);
+            this.label67.TabIndex = 22;
+            this.label67.Text = "消費";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(324, 165);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(58, 12);
+            this.label68.TabIndex = 23;
+            this.label68.Text = "ギルド倉庫";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(452, 167);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(40, 12);
+            this.label69.TabIndex = 24;
+            this.label69.Text = "ディレイ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -645,6 +921,8 @@
             this.panelMain.ResumeLayout(false);
             this.panelMainScript.ResumeLayout(false);
             this.panelMainScript.PerformLayout();
+            this.panelMainDb2.ResumeLayout(false);
+            this.panelMainDb2.PerformLayout();
             this.panelMainBase.ResumeLayout(false);
             this.panelMainBaseEquip.ResumeLayout(false);
             this.panelMainBaseEquip.PerformLayout();
@@ -711,6 +989,31 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
     }
 }
 
