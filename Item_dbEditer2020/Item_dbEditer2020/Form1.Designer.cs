@@ -108,10 +108,18 @@
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
             this.panelItemList.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelMainScript.SuspendLayout();
             this.panelMainDb2.SuspendLayout();
+            this.panelMainValue.SuspendLayout();
             this.panelMainBase.SuspendLayout();
             this.panelMainBaseEquip.SuspendLayout();
             this.panelMainBaseCommon.SuspendLayout();
@@ -148,7 +156,7 @@
             this.panelMainScript.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainScript.Location = new System.Drawing.Point(233, 0);
             this.panelMainScript.Name = "panelMainScript";
-            this.panelMainScript.Size = new System.Drawing.Size(597, 96);
+            this.panelMainScript.Size = new System.Drawing.Size(597, 100);
             this.panelMainScript.TabIndex = 5;
             // 
             // panelMainDb2
@@ -179,25 +187,32 @@
             this.panelMainDb2.Controls.Add(this.label46);
             this.panelMainDb2.Controls.Add(this.label45);
             this.panelMainDb2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMainDb2.Location = new System.Drawing.Point(233, 96);
+            this.panelMainDb2.Location = new System.Drawing.Point(233, 100);
             this.panelMainDb2.Name = "panelMainDb2";
-            this.panelMainDb2.Size = new System.Drawing.Size(597, 218);
+            this.panelMainDb2.Size = new System.Drawing.Size(597, 302);
             this.panelMainDb2.TabIndex = 4;
             // 
             // panelMainValue
             // 
+            this.panelMainValue.Controls.Add(this.label76);
+            this.panelMainValue.Controls.Add(this.label75);
+            this.panelMainValue.Controls.Add(this.label74);
+            this.panelMainValue.Controls.Add(this.label73);
+            this.panelMainValue.Controls.Add(this.label72);
+            this.panelMainValue.Controls.Add(this.label71);
+            this.panelMainValue.Controls.Add(this.label70);
             this.panelMainValue.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMainValue.Location = new System.Drawing.Point(233, 314);
+            this.panelMainValue.Location = new System.Drawing.Point(233, 402);
             this.panelMainValue.Name = "panelMainValue";
-            this.panelMainValue.Size = new System.Drawing.Size(597, 190);
+            this.panelMainValue.Size = new System.Drawing.Size(597, 90);
             this.panelMainValue.TabIndex = 3;
             // 
             // panelMainArrow
             // 
             this.panelMainArrow.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMainArrow.Location = new System.Drawing.Point(233, 504);
+            this.panelMainArrow.Location = new System.Drawing.Point(233, 492);
             this.panelMainArrow.Name = "panelMainArrow";
-            this.panelMainArrow.Size = new System.Drawing.Size(597, 73);
+            this.panelMainArrow.Size = new System.Drawing.Size(597, 85);
             this.panelMainArrow.TabIndex = 2;
             // 
             // panelMainCard
@@ -684,7 +699,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(4, 0);
+            this.label45.Location = new System.Drawing.Point(4, 2);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(49, 12);
             this.label45.TabIndex = 0;
@@ -906,6 +921,69 @@
             this.label69.TabIndex = 24;
             this.label69.Text = "ディレイ";
             // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(4, 2);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(74, 12);
+            this.label70.TabIndex = 0;
+            this.label70.Text = "item_value_db";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(11, 30);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(83, 12);
+            this.label71.TabIndex = 1;
+            this.label71.Text = "販売価格/売値";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(13, 46);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(53, 12);
+            this.label72.TabIndex = 2;
+            this.label72.Text = "販売価格";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(117, 46);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(29, 12);
+            this.label73.TabIndex = 3;
+            this.label73.Text = "売値";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(319, 29);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(43, 12);
+            this.label74.TabIndex = 4;
+            this.label74.Text = "DC/OC";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(321, 46);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(21, 12);
+            this.label75.TabIndex = 5;
+            this.label75.Text = "DC";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(435, 46);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(21, 12);
+            this.label76.TabIndex = 6;
+            this.label76.Text = "OC";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -923,6 +1001,8 @@
             this.panelMainScript.PerformLayout();
             this.panelMainDb2.ResumeLayout(false);
             this.panelMainDb2.PerformLayout();
+            this.panelMainValue.ResumeLayout(false);
+            this.panelMainValue.PerformLayout();
             this.panelMainBase.ResumeLayout(false);
             this.panelMainBaseEquip.ResumeLayout(false);
             this.panelMainBaseEquip.PerformLayout();
@@ -1014,6 +1094,13 @@
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label70;
     }
 }
 
