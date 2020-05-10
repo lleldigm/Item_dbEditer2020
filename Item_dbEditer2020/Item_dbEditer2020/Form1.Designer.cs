@@ -129,12 +129,18 @@
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
             this.panelItemList.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelMainScript.SuspendLayout();
             this.panelMainDb2.SuspendLayout();
             this.panelMainValue.SuspendLayout();
             this.panelMainArrow.SuspendLayout();
+            this.panelMainCard.SuspendLayout();
             this.panelMainBase.SuspendLayout();
             this.panelMainBaseEquip.SuspendLayout();
             this.panelMainBaseCommon.SuspendLayout();
@@ -171,7 +177,7 @@
             this.panelMainScript.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainScript.Location = new System.Drawing.Point(233, 0);
             this.panelMainScript.Name = "panelMainScript";
-            this.panelMainScript.Size = new System.Drawing.Size(597, 71);
+            this.panelMainScript.Size = new System.Drawing.Size(597, 92);
             this.panelMainScript.TabIndex = 5;
             // 
             // panelMainDb2
@@ -202,9 +208,9 @@
             this.panelMainDb2.Controls.Add(this.label46);
             this.panelMainDb2.Controls.Add(this.label45);
             this.panelMainDb2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMainDb2.Location = new System.Drawing.Point(233, 71);
+            this.panelMainDb2.Location = new System.Drawing.Point(233, 92);
             this.panelMainDb2.Name = "panelMainDb2";
-            this.panelMainDb2.Size = new System.Drawing.Size(597, 302);
+            this.panelMainDb2.Size = new System.Drawing.Size(597, 281);
             this.panelMainDb2.TabIndex = 4;
             // 
             // panelMainValue
@@ -246,6 +252,11 @@
             // 
             // panelMainCard
             // 
+            this.panelMainCard.Controls.Add(this.label95);
+            this.panelMainCard.Controls.Add(this.label94);
+            this.panelMainCard.Controls.Add(this.label93);
+            this.panelMainCard.Controls.Add(this.label92);
+            this.panelMainCard.Controls.Add(this.label91);
             this.panelMainCard.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainCard.Location = new System.Drawing.Point(233, 577);
             this.panelMainCard.Name = "panelMainCard";
@@ -1139,6 +1150,51 @@
             this.label90.TabIndex = 12;
             this.label90.Text = "矢・弾の種類";
             // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Location = new System.Drawing.Point(7, 4);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(75, 12);
+            this.label91.TabIndex = 0;
+            this.label91.Text = "item_cardtype";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Location = new System.Drawing.Point(17, 20);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(67, 12);
+            this.label92.TabIndex = 1;
+            this.label92.Text = "カードの種類";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Location = new System.Drawing.Point(27, 38);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(77, 12);
+            this.label93.TabIndex = 2;
+            this.label93.Text = "重複挿入禁止";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Location = new System.Drawing.Point(117, 38);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(77, 12);
+            this.label94.TabIndex = 3;
+            this.label94.Text = "重複挿入許可";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(214, 38);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(53, 12);
+            this.label95.TabIndex = 4;
+            this.label95.Text = "挿入禁止";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1160,6 +1216,8 @@
             this.panelMainValue.PerformLayout();
             this.panelMainArrow.ResumeLayout(false);
             this.panelMainArrow.PerformLayout();
+            this.panelMainCard.ResumeLayout(false);
+            this.panelMainCard.PerformLayout();
             this.panelMainBase.ResumeLayout(false);
             this.panelMainBaseEquip.ResumeLayout(false);
             this.panelMainBaseEquip.PerformLayout();
@@ -1272,6 +1330,11 @@
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label label93;
     }
 }
 
