@@ -80,8 +80,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label0 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
             this.panelItemList.SuspendLayout();
             this.panelMain.SuspendLayout();
+            this.panelMainScript.SuspendLayout();
             this.panelMainBase.SuspendLayout();
             this.panelMainBaseEquip.SuspendLayout();
             this.panelMainBaseCommon.SuspendLayout();
@@ -112,6 +116,9 @@
             // 
             // panelMainScript
             // 
+            this.panelMainScript.Controls.Add(this.label44);
+            this.panelMainScript.Controls.Add(this.label43);
+            this.panelMainScript.Controls.Add(this.label42);
             this.panelMainScript.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainScript.Location = new System.Drawing.Point(233, 0);
             this.panelMainScript.Name = "panelMainScript";
@@ -596,6 +603,33 @@
             this.label41.TabIndex = 0;
             this.label41.Text = "リスト絞り込み";
             // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(16, 13);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(50, 12);
+            this.label42.TabIndex = 0;
+            this.label42.Text = "LineData";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(18, 40);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(59, 12);
+            this.label43.TabIndex = 1;
+            this.label43.Text = "Use Script";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(20, 66);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(63, 12);
+            this.label44.TabIndex = 2;
+            this.label44.Text = "EquipScript";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -609,6 +643,8 @@
             this.panelItemList.ResumeLayout(false);
             this.panelItemList.PerformLayout();
             this.panelMain.ResumeLayout(false);
+            this.panelMainScript.ResumeLayout(false);
+            this.panelMainScript.PerformLayout();
             this.panelMainBase.ResumeLayout(false);
             this.panelMainBaseEquip.ResumeLayout(false);
             this.panelMainBaseEquip.PerformLayout();
@@ -672,6 +708,9 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
     }
 }
 
