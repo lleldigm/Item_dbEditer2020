@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("a,b,c");
-            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("a,b,c");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.panelItemList = new System.Windows.Forms.Panel();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.listViewItem = new System.Windows.Forms.ListView();
@@ -153,16 +153,19 @@
             this.label0 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.再読み込みToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.上書き保存ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.編集EToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.検索SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.解析AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.その他OToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.testToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.再読み込みToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.上書き保存ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.各種設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.panelItemList.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelMainScript.SuspendLayout();
@@ -203,8 +206,8 @@
             this.ColumnEName,
             this.ColumnJName});
             this.listViewItem.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem13,
-            listViewItem14});
+            listViewItem1,
+            listViewItem2});
             this.listViewItem.Location = new System.Drawing.Point(6, 31);
             this.listViewItem.Name = "listViewItem";
             this.listViewItem.Size = new System.Drawing.Size(320, 670);
@@ -1378,6 +1381,44 @@
             this.testToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.testToolStripMenuItem.Text = "ファイル(&F)";
             // 
+            // testToolStripMenuItem1
+            // 
+            this.testToolStripMenuItem1.Name = "testToolStripMenuItem1";
+            this.testToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.testToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
+            this.testToolStripMenuItem1.Text = "item_dbを開く";
+            this.testToolStripMenuItem1.Click += new System.EventHandler(this.testToolStripMenuItem1_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(183, 6);
+            // 
+            // 再読み込みToolStripMenuItem
+            // 
+            this.再読み込みToolStripMenuItem.Name = "再読み込みToolStripMenuItem";
+            this.再読み込みToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
+            this.再読み込みToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.再読み込みToolStripMenuItem.Text = "再読み込み";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(183, 6);
+            // 
+            // 上書き保存ToolStripMenuItem
+            // 
+            this.上書き保存ToolStripMenuItem.Name = "上書き保存ToolStripMenuItem";
+            this.上書き保存ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.上書き保存ToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.上書き保存ToolStripMenuItem.Text = "上書き保存";
+            // 
+            // 終了ToolStripMenuItem
+            // 
+            this.終了ToolStripMenuItem.Name = "終了ToolStripMenuItem";
+            this.終了ToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.終了ToolStripMenuItem.Text = "終了";
+            // 
             // 編集EToolStripMenuItem
             // 
             this.編集EToolStripMenuItem.Name = "編集EToolStripMenuItem";
@@ -1398,46 +1439,21 @@
             // 
             // その他OToolStripMenuItem
             // 
+            this.その他OToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.各種設定ToolStripMenuItem});
             this.その他OToolStripMenuItem.Name = "その他OToolStripMenuItem";
             this.その他OToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.その他OToolStripMenuItem.Text = "その他(&O)";
             // 
-            // testToolStripMenuItem1
+            // 各種設定ToolStripMenuItem
             // 
-            this.testToolStripMenuItem1.Name = "testToolStripMenuItem1";
-            this.testToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.testToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
-            this.testToolStripMenuItem1.Text = "開く";
+            this.各種設定ToolStripMenuItem.Name = "各種設定ToolStripMenuItem";
+            this.各種設定ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.各種設定ToolStripMenuItem.Text = "各種設定";
             // 
-            // toolStripSeparator1
+            // openFileDialog1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(167, 6);
-            // 
-            // 再読み込みToolStripMenuItem
-            // 
-            this.再読み込みToolStripMenuItem.Name = "再読み込みToolStripMenuItem";
-            this.再読み込みToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.再読み込みToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.再読み込みToolStripMenuItem.Text = "再読み込み";
-            // 
-            // 上書き保存ToolStripMenuItem
-            // 
-            this.上書き保存ToolStripMenuItem.Name = "上書き保存ToolStripMenuItem";
-            this.上書き保存ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.上書き保存ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.上書き保存ToolStripMenuItem.Text = "上書き保存";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(167, 6);
-            // 
-            // 終了ToolStripMenuItem
-            // 
-            this.終了ToolStripMenuItem.Name = "終了ToolStripMenuItem";
-            this.終了ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.終了ToolStripMenuItem.Text = "終了";
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -1611,6 +1627,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem 上書き保存ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 終了ToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.ToolStripMenuItem 各種設定ToolStripMenuItem;
     }
 }
 
