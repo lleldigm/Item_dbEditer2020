@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("a,b,c");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.panelItemList = new System.Windows.Forms.Panel();
             this.label41 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
@@ -124,11 +126,13 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panelMainBaseCommon = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBoxSex = new System.Windows.Forms.ComboBox();
+            this.comboBoxType = new System.Windows.Forms.ComboBox();
+            this.textBoxWeight = new System.Windows.Forms.TextBox();
+            this.textBoxEquLv = new System.Windows.Forms.TextBox();
+            this.textBoxSellValue = new System.Windows.Forms.TextBox();
+            this.textBoxBuyValue = new System.Windows.Forms.TextBox();
+            this.textBoxJob = new System.Windows.Forms.TextBox();
             this.textBoxJName = new System.Windows.Forms.TextBox();
             this.textBoxEName = new System.Windows.Forms.TextBox();
             this.textBoxId = new System.Windows.Forms.TextBox();
@@ -142,8 +146,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label0 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.listViewItem = new System.Windows.Forms.ListView();
+            this.ColumnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnEName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnJName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.panelItemList.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelMainScript.SuspendLayout();
@@ -158,17 +165,19 @@
             // 
             // panelItemList
             // 
+            this.panelItemList.Controls.Add(this.comboBox3);
+            this.panelItemList.Controls.Add(this.listViewItem);
             this.panelItemList.Controls.Add(this.label41);
             this.panelItemList.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelItemList.Location = new System.Drawing.Point(0, 0);
             this.panelItemList.Name = "panelItemList";
-            this.panelItemList.Size = new System.Drawing.Size(202, 705);
+            this.panelItemList.Size = new System.Drawing.Size(332, 705);
             this.panelItemList.TabIndex = 0;
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(13, 4);
+            this.label41.Location = new System.Drawing.Point(13, 11);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(72, 12);
             this.label41.TabIndex = 0;
@@ -183,9 +192,9 @@
             this.panelMain.Controls.Add(this.panelMainCard);
             this.panelMain.Controls.Add(this.panelMainBase);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(202, 0);
+            this.panelMain.Location = new System.Drawing.Point(332, 0);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1046, 705);
+            this.panelMain.Size = new System.Drawing.Size(916, 705);
             this.panelMain.TabIndex = 1;
             // 
             // panelMainScript
@@ -196,7 +205,7 @@
             this.panelMainScript.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainScript.Location = new System.Drawing.Point(233, 0);
             this.panelMainScript.Name = "panelMainScript";
-            this.panelMainScript.Size = new System.Drawing.Size(813, 150);
+            this.panelMainScript.Size = new System.Drawing.Size(683, 150);
             this.panelMainScript.TabIndex = 5;
             // 
             // label44
@@ -256,7 +265,7 @@
             this.panelMainDb2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainDb2.Location = new System.Drawing.Point(233, 150);
             this.panelMainDb2.Name = "panelMainDb2";
-            this.panelMainDb2.Size = new System.Drawing.Size(813, 281);
+            this.panelMainDb2.Size = new System.Drawing.Size(683, 281);
             this.panelMainDb2.TabIndex = 4;
             // 
             // label69
@@ -496,7 +505,7 @@
             this.panelMainValue.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainValue.Location = new System.Drawing.Point(233, 431);
             this.panelMainValue.Name = "panelMainValue";
-            this.panelMainValue.Size = new System.Drawing.Size(813, 90);
+            this.panelMainValue.Size = new System.Drawing.Size(683, 90);
             this.panelMainValue.TabIndex = 3;
             // 
             // label76
@@ -581,7 +590,7 @@
             this.panelMainArrow.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainArrow.Location = new System.Drawing.Point(233, 521);
             this.panelMainArrow.Name = "panelMainArrow";
-            this.panelMainArrow.Size = new System.Drawing.Size(813, 114);
+            this.panelMainArrow.Size = new System.Drawing.Size(683, 114);
             this.panelMainArrow.TabIndex = 2;
             // 
             // label90
@@ -720,7 +729,7 @@
             this.panelMainCard.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainCard.Location = new System.Drawing.Point(233, 635);
             this.panelMainCard.Name = "panelMainCard";
-            this.panelMainCard.Size = new System.Drawing.Size(813, 70);
+            this.panelMainCard.Size = new System.Drawing.Size(683, 70);
             this.panelMainCard.TabIndex = 1;
             // 
             // label95
@@ -1099,13 +1108,13 @@
             // 
             // panelMainBaseCommon
             // 
-            this.panelMainBaseCommon.Controls.Add(this.comboBox2);
-            this.panelMainBaseCommon.Controls.Add(this.comboBox1);
-            this.panelMainBaseCommon.Controls.Add(this.textBox7);
-            this.panelMainBaseCommon.Controls.Add(this.textBox8);
-            this.panelMainBaseCommon.Controls.Add(this.textBox6);
-            this.panelMainBaseCommon.Controls.Add(this.textBox5);
-            this.panelMainBaseCommon.Controls.Add(this.textBox4);
+            this.panelMainBaseCommon.Controls.Add(this.comboBoxSex);
+            this.panelMainBaseCommon.Controls.Add(this.comboBoxType);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxWeight);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxEquLv);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxSellValue);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxBuyValue);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxJob);
             this.panelMainBaseCommon.Controls.Add(this.textBoxJName);
             this.panelMainBaseCommon.Controls.Add(this.textBoxEName);
             this.panelMainBaseCommon.Controls.Add(this.textBoxId);
@@ -1125,40 +1134,58 @@
             this.panelMainBaseCommon.Size = new System.Drawing.Size(233, 231);
             this.panelMainBaseCommon.TabIndex = 0;
             // 
-            // textBox7
+            // comboBoxSex
             // 
-            this.textBox7.Location = new System.Drawing.Point(56, 165);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(57, 19);
-            this.textBox7.TabIndex = 42;
+            this.comboBoxSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSex.FormattingEnabled = true;
+            this.comboBoxSex.Location = new System.Drawing.Point(153, 167);
+            this.comboBoxSex.Name = "comboBoxSex";
+            this.comboBoxSex.Size = new System.Drawing.Size(57, 20);
+            this.comboBoxSex.TabIndex = 43;
             // 
-            // textBox8
+            // comboBoxType
             // 
-            this.textBox8.Location = new System.Drawing.Point(153, 195);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(57, 19);
-            this.textBox8.TabIndex = 42;
+            this.comboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxType.FormattingEnabled = true;
+            this.comboBoxType.Location = new System.Drawing.Point(56, 81);
+            this.comboBoxType.Name = "comboBoxType";
+            this.comboBoxType.Size = new System.Drawing.Size(100, 20);
+            this.comboBoxType.TabIndex = 43;
             // 
-            // textBox6
+            // textBoxWeight
             // 
-            this.textBox6.Location = new System.Drawing.Point(153, 138);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(57, 19);
-            this.textBox6.TabIndex = 42;
+            this.textBoxWeight.Location = new System.Drawing.Point(56, 165);
+            this.textBoxWeight.Name = "textBoxWeight";
+            this.textBoxWeight.Size = new System.Drawing.Size(57, 19);
+            this.textBoxWeight.TabIndex = 42;
             // 
-            // textBox5
+            // textBoxEquLv
             // 
-            this.textBox5.Location = new System.Drawing.Point(56, 138);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(57, 19);
-            this.textBox5.TabIndex = 42;
+            this.textBoxEquLv.Location = new System.Drawing.Point(153, 195);
+            this.textBoxEquLv.Name = "textBoxEquLv";
+            this.textBoxEquLv.Size = new System.Drawing.Size(57, 19);
+            this.textBoxEquLv.TabIndex = 42;
             // 
-            // textBox4
+            // textBoxSellValue
             // 
-            this.textBox4.Location = new System.Drawing.Point(56, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 19);
-            this.textBox4.TabIndex = 42;
+            this.textBoxSellValue.Location = new System.Drawing.Point(153, 138);
+            this.textBoxSellValue.Name = "textBoxSellValue";
+            this.textBoxSellValue.Size = new System.Drawing.Size(57, 19);
+            this.textBoxSellValue.TabIndex = 42;
+            // 
+            // textBoxBuyValue
+            // 
+            this.textBoxBuyValue.Location = new System.Drawing.Point(56, 138);
+            this.textBoxBuyValue.Name = "textBoxBuyValue";
+            this.textBoxBuyValue.Size = new System.Drawing.Size(57, 19);
+            this.textBoxBuyValue.TabIndex = 42;
+            // 
+            // textBoxJob
+            // 
+            this.textBoxJob.Location = new System.Drawing.Point(56, 105);
+            this.textBoxJob.Name = "textBoxJob";
+            this.textBoxJob.Size = new System.Drawing.Size(100, 19);
+            this.textBoxJob.TabIndex = 42;
             // 
             // textBoxJName
             // 
@@ -1271,23 +1298,45 @@
             this.label0.TabIndex = 30;
             this.label0.Text = "ID";
             // 
-            // comboBox1
+            // listViewItem
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(56, 81);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 20);
-            this.comboBox1.TabIndex = 43;
+            this.listViewItem.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ColumnID,
+            this.ColumnEName,
+            this.ColumnJName});
+            this.listViewItem.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2});
+            this.listViewItem.Location = new System.Drawing.Point(6, 31);
+            this.listViewItem.Name = "listViewItem";
+            this.listViewItem.Size = new System.Drawing.Size(320, 670);
+            this.listViewItem.TabIndex = 1;
+            this.listViewItem.UseCompatibleStateImageBehavior = false;
+            this.listViewItem.View = System.Windows.Forms.View.Details;
             // 
-            // comboBox2
+            // ColumnID
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(153, 167);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(57, 20);
-            this.comboBox2.TabIndex = 43;
+            this.ColumnID.Text = "ID";
+            this.ColumnID.Width = 78;
+            // 
+            // ColumnEName
+            // 
+            this.ColumnEName.Text = "英語名";
+            this.ColumnEName.Width = 93;
+            // 
+            // ColumnJName
+            // 
+            this.ColumnJName.Text = "日本名";
+            this.ColumnJName.Width = 135;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(91, 5);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(57, 20);
+            this.comboBox3.TabIndex = 43;
             // 
             // Form1
             // 
@@ -1429,16 +1478,21 @@
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxWeight;
+        private System.Windows.Forms.TextBox textBoxEquLv;
+        private System.Windows.Forms.TextBox textBoxSellValue;
+        private System.Windows.Forms.TextBox textBoxBuyValue;
+        private System.Windows.Forms.TextBox textBoxJob;
         private System.Windows.Forms.TextBox textBoxJName;
         private System.Windows.Forms.TextBox textBoxEName;
         private System.Windows.Forms.TextBox textBoxId;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxSex;
+        private System.Windows.Forms.ComboBox comboBoxType;
+        private System.Windows.Forms.ListView listViewItem;
+        private System.Windows.Forms.ColumnHeader ColumnID;
+        private System.Windows.Forms.ColumnHeader ColumnEName;
+        private System.Windows.Forms.ColumnHeader ColumnJName;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
 
