@@ -21,7 +21,5 @@ namespace Item_dbEditer2020
         {
 
         }
-
-
     }
 }

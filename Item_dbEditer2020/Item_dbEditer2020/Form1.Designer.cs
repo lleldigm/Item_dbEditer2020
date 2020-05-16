@@ -28,9 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("a,b,c");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("a,b,c");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("");
             this.panelItemList = new System.Windows.Forms.Panel();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.listViewItem = new System.Windows.Forms.ListView();
+            this.ColumnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnEName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnJName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label41 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelMainScript = new System.Windows.Forms.Panel();
@@ -146,11 +151,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label0 = new System.Windows.Forms.Label();
-            this.listViewItem = new System.Windows.Forms.ListView();
-            this.ColumnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnEName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnJName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.編集EToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.検索SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.解析AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.その他OToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.再読み込みToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.上書き保存ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelItemList.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelMainScript.SuspendLayout();
@@ -161,6 +173,7 @@
             this.panelMainBase.SuspendLayout();
             this.panelMainBaseEquip.SuspendLayout();
             this.panelMainBaseCommon.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelItemList
@@ -169,10 +182,50 @@
             this.panelItemList.Controls.Add(this.listViewItem);
             this.panelItemList.Controls.Add(this.label41);
             this.panelItemList.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelItemList.Location = new System.Drawing.Point(0, 0);
+            this.panelItemList.Location = new System.Drawing.Point(0, 24);
             this.panelItemList.Name = "panelItemList";
-            this.panelItemList.Size = new System.Drawing.Size(332, 705);
+            this.panelItemList.Size = new System.Drawing.Size(332, 681);
             this.panelItemList.TabIndex = 0;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(91, 5);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(57, 20);
+            this.comboBox3.TabIndex = 43;
+            // 
+            // listViewItem
+            // 
+            this.listViewItem.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ColumnID,
+            this.ColumnEName,
+            this.ColumnJName});
+            this.listViewItem.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem13,
+            listViewItem14});
+            this.listViewItem.Location = new System.Drawing.Point(6, 31);
+            this.listViewItem.Name = "listViewItem";
+            this.listViewItem.Size = new System.Drawing.Size(320, 670);
+            this.listViewItem.TabIndex = 1;
+            this.listViewItem.UseCompatibleStateImageBehavior = false;
+            this.listViewItem.View = System.Windows.Forms.View.Details;
+            // 
+            // ColumnID
+            // 
+            this.ColumnID.Text = "ID";
+            this.ColumnID.Width = 78;
+            // 
+            // ColumnEName
+            // 
+            this.ColumnEName.Text = "英語名";
+            this.ColumnEName.Width = 93;
+            // 
+            // ColumnJName
+            // 
+            this.ColumnJName.Text = "日本名";
+            this.ColumnJName.Width = 135;
             // 
             // label41
             // 
@@ -192,9 +245,9 @@
             this.panelMain.Controls.Add(this.panelMainCard);
             this.panelMain.Controls.Add(this.panelMainBase);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(332, 0);
+            this.panelMain.Location = new System.Drawing.Point(332, 24);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(916, 705);
+            this.panelMain.Size = new System.Drawing.Size(916, 681);
             this.panelMain.TabIndex = 1;
             // 
             // panelMainScript
@@ -205,7 +258,7 @@
             this.panelMainScript.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainScript.Location = new System.Drawing.Point(233, 0);
             this.panelMainScript.Name = "panelMainScript";
-            this.panelMainScript.Size = new System.Drawing.Size(683, 150);
+            this.panelMainScript.Size = new System.Drawing.Size(683, 126);
             this.panelMainScript.TabIndex = 5;
             // 
             // label44
@@ -263,7 +316,7 @@
             this.panelMainDb2.Controls.Add(this.label46);
             this.panelMainDb2.Controls.Add(this.label45);
             this.panelMainDb2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMainDb2.Location = new System.Drawing.Point(233, 150);
+            this.panelMainDb2.Location = new System.Drawing.Point(233, 126);
             this.panelMainDb2.Name = "panelMainDb2";
             this.panelMainDb2.Size = new System.Drawing.Size(683, 281);
             this.panelMainDb2.TabIndex = 4;
@@ -503,7 +556,7 @@
             this.panelMainValue.Controls.Add(this.label71);
             this.panelMainValue.Controls.Add(this.label70);
             this.panelMainValue.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMainValue.Location = new System.Drawing.Point(233, 431);
+            this.panelMainValue.Location = new System.Drawing.Point(233, 407);
             this.panelMainValue.Name = "panelMainValue";
             this.panelMainValue.Size = new System.Drawing.Size(683, 90);
             this.panelMainValue.TabIndex = 3;
@@ -588,7 +641,7 @@
             this.panelMainArrow.Controls.Add(this.label78);
             this.panelMainArrow.Controls.Add(this.label77);
             this.panelMainArrow.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMainArrow.Location = new System.Drawing.Point(233, 521);
+            this.panelMainArrow.Location = new System.Drawing.Point(233, 497);
             this.panelMainArrow.Name = "panelMainArrow";
             this.panelMainArrow.Size = new System.Drawing.Size(683, 114);
             this.panelMainArrow.TabIndex = 2;
@@ -727,7 +780,7 @@
             this.panelMainCard.Controls.Add(this.label92);
             this.panelMainCard.Controls.Add(this.label91);
             this.panelMainCard.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelMainCard.Location = new System.Drawing.Point(233, 635);
+            this.panelMainCard.Location = new System.Drawing.Point(233, 611);
             this.panelMainCard.Name = "panelMainCard";
             this.panelMainCard.Size = new System.Drawing.Size(683, 70);
             this.panelMainCard.TabIndex = 1;
@@ -784,7 +837,7 @@
             this.panelMainBase.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMainBase.Location = new System.Drawing.Point(0, 0);
             this.panelMainBase.Name = "panelMainBase";
-            this.panelMainBase.Size = new System.Drawing.Size(233, 705);
+            this.panelMainBase.Size = new System.Drawing.Size(233, 681);
             this.panelMainBase.TabIndex = 0;
             // 
             // panelMainBaseEquip
@@ -823,7 +876,7 @@
             this.panelMainBaseEquip.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainBaseEquip.Location = new System.Drawing.Point(0, 231);
             this.panelMainBaseEquip.Name = "panelMainBaseEquip";
-            this.panelMainBaseEquip.Size = new System.Drawing.Size(233, 474);
+            this.panelMainBaseEquip.Size = new System.Drawing.Size(233, 450);
             this.panelMainBaseEquip.TabIndex = 1;
             // 
             // label27
@@ -1298,45 +1351,93 @@
             this.label0.TabIndex = 30;
             this.label0.Text = "ID";
             // 
-            // listViewItem
+            // menuStrip1
             // 
-            this.listViewItem.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ColumnID,
-            this.ColumnEName,
-            this.ColumnJName});
-            this.listViewItem.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
-            this.listViewItem.Location = new System.Drawing.Point(6, 31);
-            this.listViewItem.Name = "listViewItem";
-            this.listViewItem.Size = new System.Drawing.Size(320, 670);
-            this.listViewItem.TabIndex = 1;
-            this.listViewItem.UseCompatibleStateImageBehavior = false;
-            this.listViewItem.View = System.Windows.Forms.View.Details;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.testToolStripMenuItem,
+            this.編集EToolStripMenuItem,
+            this.検索SToolStripMenuItem,
+            this.解析AToolStripMenuItem,
+            this.その他OToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1248, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // ColumnID
+            // testToolStripMenuItem
             // 
-            this.ColumnID.Text = "ID";
-            this.ColumnID.Width = 78;
+            this.testToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.testToolStripMenuItem1,
+            this.toolStripSeparator1,
+            this.再読み込みToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.上書き保存ToolStripMenuItem,
+            this.終了ToolStripMenuItem});
+            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.testToolStripMenuItem.Text = "ファイル(&F)";
             // 
-            // ColumnEName
+            // 編集EToolStripMenuItem
             // 
-            this.ColumnEName.Text = "英語名";
-            this.ColumnEName.Width = 93;
+            this.編集EToolStripMenuItem.Name = "編集EToolStripMenuItem";
+            this.編集EToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.編集EToolStripMenuItem.Text = "編集(&E)";
             // 
-            // ColumnJName
+            // 検索SToolStripMenuItem
             // 
-            this.ColumnJName.Text = "日本名";
-            this.ColumnJName.Width = 135;
+            this.検索SToolStripMenuItem.Name = "検索SToolStripMenuItem";
+            this.検索SToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.検索SToolStripMenuItem.Text = "検索(&S)";
             // 
-            // comboBox3
+            // 解析AToolStripMenuItem
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(91, 5);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(57, 20);
-            this.comboBox3.TabIndex = 43;
+            this.解析AToolStripMenuItem.Name = "解析AToolStripMenuItem";
+            this.解析AToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.解析AToolStripMenuItem.Text = "解析(&A)";
+            // 
+            // その他OToolStripMenuItem
+            // 
+            this.その他OToolStripMenuItem.Name = "その他OToolStripMenuItem";
+            this.その他OToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.その他OToolStripMenuItem.Text = "その他(&O)";
+            // 
+            // testToolStripMenuItem1
+            // 
+            this.testToolStripMenuItem1.Name = "testToolStripMenuItem1";
+            this.testToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.testToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
+            this.testToolStripMenuItem1.Text = "開く";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(167, 6);
+            // 
+            // 再読み込みToolStripMenuItem
+            // 
+            this.再読み込みToolStripMenuItem.Name = "再読み込みToolStripMenuItem";
+            this.再読み込みToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
+            this.再読み込みToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.再読み込みToolStripMenuItem.Text = "再読み込み";
+            // 
+            // 上書き保存ToolStripMenuItem
+            // 
+            this.上書き保存ToolStripMenuItem.Name = "上書き保存ToolStripMenuItem";
+            this.上書き保存ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.上書き保存ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.上書き保存ToolStripMenuItem.Text = "上書き保存";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(167, 6);
+            // 
+            // 終了ToolStripMenuItem
+            // 
+            this.終了ToolStripMenuItem.Name = "終了ToolStripMenuItem";
+            this.終了ToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.終了ToolStripMenuItem.Text = "終了";
             // 
             // Form1
             // 
@@ -1345,6 +1446,8 @@
             this.ClientSize = new System.Drawing.Size(1248, 705);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelItemList);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Item_db Editer 2020 for Auriga";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1366,7 +1469,10 @@
             this.panelMainBaseEquip.PerformLayout();
             this.panelMainBaseCommon.ResumeLayout(false);
             this.panelMainBaseCommon.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1493,6 +1599,18 @@
         private System.Windows.Forms.ColumnHeader ColumnEName;
         private System.Windows.Forms.ColumnHeader ColumnJName;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 編集EToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 検索SToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 解析AToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem その他OToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem 再読み込みToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem 上書き保存ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 終了ToolStripMenuItem;
     }
 }
 
