@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelItemList = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.ColumnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnEName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnJName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label41 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelMainScript = new System.Windows.Forms.Panel();
@@ -164,6 +165,12 @@
             this.各種設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.item_DataSet = new Item_dbEditer2020.data.item_DataSet();
+            this.itemdbBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelItemList.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelMainScript.SuspendLayout();
@@ -175,10 +182,14 @@
             this.panelMainBaseEquip.SuspendLayout();
             this.panelMainBaseCommon.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemdbBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelItemList
             // 
+            this.panelItemList.Controls.Add(this.dataGridView1);
             this.panelItemList.Controls.Add(this.listView1);
             this.panelItemList.Controls.Add(this.comboBox3);
             this.panelItemList.Controls.Add(this.label41);
@@ -188,15 +199,6 @@
             this.panelItemList.Size = new System.Drawing.Size(332, 681);
             this.panelItemList.TabIndex = 0;
             // 
-            // comboBox3
-            // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(91, 5);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(57, 20);
-            this.comboBox3.TabIndex = 43;
-            // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -205,7 +207,7 @@
             this.ColumnJName});
             this.listView1.Location = new System.Drawing.Point(6, 31);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(320, 630);
+            this.listView1.Size = new System.Drawing.Size(320, 150);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -224,6 +226,15 @@
             // 
             this.ColumnJName.Text = "日本名";
             this.ColumnJName.Width = 147;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(91, 5);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(57, 20);
+            this.comboBox3.TabIndex = 43;
             // 
             // label41
             // 
@@ -1450,6 +1461,50 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // item_DataSet
+            // 
+            this.item_DataSet.DataSetName = "item_DataSet";
+            this.item_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // itemdbBindingSource
+            // 
+            this.itemdbBindingSource.DataMember = "item_db";
+            this.itemdbBindingSource.DataSource = this.item_DataSet;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.jNameDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.itemdbBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 199);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 21;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(311, 455);
+            this.dataGridView1.TabIndex = 44;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // jNameDataGridViewTextBoxColumn
+            // 
+            this.jNameDataGridViewTextBoxColumn.DataPropertyName = "JName";
+            this.jNameDataGridViewTextBoxColumn.HeaderText = "JName";
+            this.jNameDataGridViewTextBoxColumn.Name = "jNameDataGridViewTextBoxColumn";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1482,6 +1537,9 @@
             this.panelMainBaseCommon.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemdbBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1625,6 +1683,12 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.ToolStripMenuItem 各種設定ToolStripMenuItem;
+        private System.Windows.Forms.BindingSource itemdbBindingSource;
+        private data.item_DataSet item_DataSet;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn jNameDataGridViewTextBoxColumn;
     }
 }
 

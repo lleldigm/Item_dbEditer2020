@@ -57,15 +57,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="beans\Item_db2Beans.cs" />
-    <Compile Include="beans\Item_dbBeans.cs" />
-    <Compile Include="beans\Item_db_preBeans.cs" />
+    <Compile Include="data\item_DataSet.cs">
+      <DependentUpon>item_DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="data\item_DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>item_DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="db\Item_db.cs" />
     <Compile Include="util\Constant.cs" />
     <Compile Include="util\CvsStream.cs" />
     <Compile Include="view\FormMain.cs">
