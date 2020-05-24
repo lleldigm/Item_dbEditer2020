@@ -67,7 +67,7 @@
     </Compile>
     <Compile Include="db\Item_db.cs" />
     <Compile Include="util\Constant.cs" />
-    <Compile Include="util\CsvStream.cs" />
+    <Compile Include="util\CvsStream.cs" />
     <Compile Include="view\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>

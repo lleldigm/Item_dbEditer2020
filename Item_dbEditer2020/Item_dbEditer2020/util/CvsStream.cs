@@ -22,11 +22,11 @@ namespace Item_dbEditer2020.util
 
         public Item_db doTest()
         {
-           return dbLoad();
-            
+            return dbLoad();
+
         }
 
-  
+
         public void csvLoad()
         {
             dbLoad();
@@ -39,37 +39,38 @@ namespace Item_dbEditer2020.util
         }
 
 
-        public Item_db dbLoad() {
+        public Item_db dbLoad()
+        {
             Item_db item_db = new Item_db();
-            
+
 
             //読み込むCSVファイルを開く
-            StreamReader sr = new StreamReader(dbPath,System.Text.Encoding.GetEncoding("shift_jis"));
+            StreamReader sr = new StreamReader(dbPath, System.Text.Encoding.GetEncoding("shift_jis"));
 
             //CSVから1行分の文字を読み取り、文字列として返す
-           
-           
+
+
             while (!sr.EndOfStream)
             {
-                
+
                 Item_dbBeans item_dbBeans = new Item_dbBeans();
                 string sLine = sr.ReadLine();
                 if (sLine.StartsWith("//"))
                 {
-           
+
                     item_dbBeans.comment = sLine;
                     item_db.item_db.Add(item_dbBeans);
                 }
 
                 else if (string.IsNullOrEmpty(sLine))
                 {
-                    
+
                     item_dbBeans.comment = "改行";
                     item_db.item_db.Add(item_dbBeans);
                 }
                 else
                 {
-                    
+
                     string[] sFields = sLine.Split(',');
                     item_dbBeans.ID = sFields[0];
                     item_dbBeans.Name = sFields[1];
@@ -78,7 +79,7 @@ namespace Item_dbEditer2020.util
 
 
                 }
-                
+
 
 
 
