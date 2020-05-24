@@ -30,10 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelItemList = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.ColumnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnEName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ColumnJName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label41 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
@@ -165,13 +162,13 @@
             this.各種設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.item_DataSet = new Item_dbEditer2020.data.item_DataSet();
-            this.itemdbBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.jNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemdbBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.item_DataSet = new Item_dbEditer2020.data.item_DataSet();
             this.panelItemList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelMain.SuspendLayout();
             this.panelMainScript.SuspendLayout();
             this.panelMainDb2.SuspendLayout();
@@ -182,50 +179,42 @@
             this.panelMainBaseEquip.SuspendLayout();
             this.panelMainBaseCommon.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemdbBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panelItemList
             // 
             this.panelItemList.Controls.Add(this.dataGridView1);
-            this.panelItemList.Controls.Add(this.listView1);
             this.panelItemList.Controls.Add(this.comboBox3);
             this.panelItemList.Controls.Add(this.label41);
             this.panelItemList.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelItemList.Location = new System.Drawing.Point(0, 24);
             this.panelItemList.Name = "panelItemList";
-            this.panelItemList.Size = new System.Drawing.Size(332, 681);
+            this.panelItemList.Size = new System.Drawing.Size(380, 681);
             this.panelItemList.TabIndex = 0;
             // 
-            // listView1
+            // dataGridView1
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.ColumnID,
-            this.ColumnEName,
-            this.ColumnJName});
-            this.listView1.Location = new System.Drawing.Point(6, 31);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(320, 150);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // ColumnID
-            // 
-            this.ColumnID.Text = "ID";
-            this.ColumnID.Width = 78;
-            // 
-            // ColumnEName
-            // 
-            this.ColumnEName.Text = "英語名";
-            this.ColumnEName.Width = 93;
-            // 
-            // ColumnJName
-            // 
-            this.ColumnJName.Text = "日本名";
-            this.ColumnJName.Width = 147;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.jNameDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.itemdbBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(10, 31);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 21;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(364, 623);
+            this.dataGridView1.TabIndex = 44;
             // 
             // comboBox3
             // 
@@ -254,9 +243,9 @@
             this.panelMain.Controls.Add(this.panelMainCard);
             this.panelMain.Controls.Add(this.panelMainBase);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(332, 24);
+            this.panelMain.Location = new System.Drawing.Point(380, 24);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(916, 681);
+            this.panelMain.Size = new System.Drawing.Size(868, 681);
             this.panelMain.TabIndex = 1;
             // 
             // panelMainScript
@@ -267,7 +256,7 @@
             this.panelMainScript.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMainScript.Location = new System.Drawing.Point(233, 0);
             this.panelMainScript.Name = "panelMainScript";
-            this.panelMainScript.Size = new System.Drawing.Size(683, 126);
+            this.panelMainScript.Size = new System.Drawing.Size(635, 126);
             this.panelMainScript.TabIndex = 5;
             // 
             // label44
@@ -327,7 +316,7 @@
             this.panelMainDb2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainDb2.Location = new System.Drawing.Point(233, 126);
             this.panelMainDb2.Name = "panelMainDb2";
-            this.panelMainDb2.Size = new System.Drawing.Size(683, 281);
+            this.panelMainDb2.Size = new System.Drawing.Size(635, 281);
             this.panelMainDb2.TabIndex = 4;
             // 
             // label69
@@ -567,7 +556,7 @@
             this.panelMainValue.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainValue.Location = new System.Drawing.Point(233, 407);
             this.panelMainValue.Name = "panelMainValue";
-            this.panelMainValue.Size = new System.Drawing.Size(683, 90);
+            this.panelMainValue.Size = new System.Drawing.Size(635, 90);
             this.panelMainValue.TabIndex = 3;
             // 
             // label76
@@ -652,7 +641,7 @@
             this.panelMainArrow.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainArrow.Location = new System.Drawing.Point(233, 497);
             this.panelMainArrow.Name = "panelMainArrow";
-            this.panelMainArrow.Size = new System.Drawing.Size(683, 114);
+            this.panelMainArrow.Size = new System.Drawing.Size(635, 114);
             this.panelMainArrow.TabIndex = 2;
             // 
             // label90
@@ -791,7 +780,7 @@
             this.panelMainCard.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainCard.Location = new System.Drawing.Point(233, 611);
             this.panelMainCard.Name = "panelMainCard";
-            this.panelMainCard.Size = new System.Drawing.Size(683, 70);
+            this.panelMainCard.Size = new System.Drawing.Size(635, 70);
             this.panelMainCard.TabIndex = 1;
             // 
             // label95
@@ -1461,49 +1450,42 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // item_DataSet
-            // 
-            this.item_DataSet.DataSetName = "item_DataSet";
-            this.item_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // itemdbBindingSource
-            // 
-            this.itemdbBindingSource.DataMember = "item_db";
-            this.itemdbBindingSource.DataSource = this.item_DataSet;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.jNameDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.itemdbBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 199);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 21;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(311, 455);
-            this.dataGridView1.TabIndex = 44;
-            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
             this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.iDDataGridViewTextBoxColumn.Width = 50;
             // 
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.nameDataGridViewTextBoxColumn.Width = 130;
             // 
             // jNameDataGridViewTextBoxColumn
             // 
             this.jNameDataGridViewTextBoxColumn.DataPropertyName = "JName";
             this.jNameDataGridViewTextBoxColumn.HeaderText = "JName";
             this.jNameDataGridViewTextBoxColumn.Name = "jNameDataGridViewTextBoxColumn";
+            this.jNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.jNameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.jNameDataGridViewTextBoxColumn.Width = 182;
+            // 
+            // itemdbBindingSource
+            // 
+            this.itemdbBindingSource.DataMember = "item_db";
+            this.itemdbBindingSource.DataSource = this.item_DataSet;
+            // 
+            // item_DataSet
+            // 
+            this.item_DataSet.DataSetName = "item_DataSet";
+            this.item_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Form1
             // 
@@ -1519,6 +1501,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelItemList.ResumeLayout(false);
             this.panelItemList.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelMain.ResumeLayout(false);
             this.panelMainScript.ResumeLayout(false);
             this.panelMainScript.PerformLayout();
@@ -1537,9 +1520,8 @@
             this.panelMainBaseCommon.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemdbBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1663,10 +1645,6 @@
         private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.ComboBox comboBoxSex;
         private System.Windows.Forms.ComboBox comboBoxType;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader ColumnID;
-        private System.Windows.Forms.ColumnHeader ColumnEName;
-        private System.Windows.Forms.ColumnHeader ColumnJName;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;

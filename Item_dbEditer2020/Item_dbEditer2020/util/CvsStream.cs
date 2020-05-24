@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using CsvHelper.Configuration.Attributes;
 using CsvHelper;
 using System.Data;
+using System.Text.RegularExpressions;
 
 namespace Item_dbEditer2020.util
 {
@@ -47,6 +48,7 @@ namespace Item_dbEditer2020.util
                     DataRow row =  dataSet.Tables[0].NewRow();
                     row[0] = sLine;
                     dataSet.Tables[0].Rows.Add(row);
+                    
                 }
 
                 else if (string.IsNullOrEmpty(sLine))
@@ -58,10 +60,16 @@ namespace Item_dbEditer2020.util
                 else
                 {
                     DataRow row = dataSet.Tables[0].NewRow();
+
+                    var m = Regex.Match(sLine, "^([^,]*,[^,]*,[^,]*,[^,]*,[^,]*[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,[^,]*,),(.*)$");
+                    //Console.WriteLine("A=" + m.Groups[1].Value);
+                    //Console.WriteLine("B=" + m.Groups[2].Value);
+
                     string[] sFields = sLine.Split(',');
                     row[0] = sFields[0];
                     row[1] = sFields[1];
                     row[2] = sFields[2];
+
                     dataSet.Tables[0].Rows.Add(row);
 
                 }
