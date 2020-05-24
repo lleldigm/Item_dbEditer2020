@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("a,b,c");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.panelItemList = new System.Windows.Forms.Panel();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.listViewItem = new System.Windows.Forms.ListView();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.ColumnID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnEName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnJName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -181,8 +179,8 @@
             // 
             // panelItemList
             // 
+            this.panelItemList.Controls.Add(this.listView1);
             this.panelItemList.Controls.Add(this.comboBox3);
-            this.panelItemList.Controls.Add(this.listViewItem);
             this.panelItemList.Controls.Add(this.label41);
             this.panelItemList.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelItemList.Location = new System.Drawing.Point(0, 24);
@@ -199,21 +197,18 @@
             this.comboBox3.Size = new System.Drawing.Size(57, 20);
             this.comboBox3.TabIndex = 43;
             // 
-            // listViewItem
+            // listView1
             // 
-            this.listViewItem.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ColumnID,
             this.ColumnEName,
             this.ColumnJName});
-            this.listViewItem.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
-            this.listViewItem.Location = new System.Drawing.Point(6, 31);
-            this.listViewItem.Name = "listViewItem";
-            this.listViewItem.Size = new System.Drawing.Size(320, 670);
-            this.listViewItem.TabIndex = 1;
-            this.listViewItem.UseCompatibleStateImageBehavior = false;
-            this.listViewItem.View = System.Windows.Forms.View.Details;
+            this.listView1.Location = new System.Drawing.Point(6, 31);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(320, 630);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // ColumnID
             // 
@@ -228,7 +223,7 @@
             // ColumnJName
             // 
             this.ColumnJName.Text = "日本名";
-            this.ColumnJName.Width = 135;
+            this.ColumnJName.Width = 147;
             // 
             // label41
             // 
@@ -1610,7 +1605,7 @@
         private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.ComboBox comboBoxSex;
         private System.Windows.Forms.ComboBox comboBoxType;
-        private System.Windows.Forms.ListView listViewItem;
+        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader ColumnID;
         private System.Windows.Forms.ColumnHeader ColumnEName;
         private System.Windows.Forms.ColumnHeader ColumnJName;
