@@ -127,12 +127,12 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panelMainBaseCommon = new System.Windows.Forms.Panel();
-            this.comboBoxSex = new System.Windows.Forms.ComboBox();
+            this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.textBoxWeight = new System.Windows.Forms.TextBox();
-            this.textBoxEquLv = new System.Windows.Forms.TextBox();
-            this.textBoxSellValue = new System.Windows.Forms.TextBox();
-            this.textBoxBuyValue = new System.Windows.Forms.TextBox();
+            this.textBoxELv = new System.Windows.Forms.TextBox();
+            this.textBoxSell = new System.Windows.Forms.TextBox();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
             this.textBoxJob = new System.Windows.Forms.TextBox();
             this.textBoxJname = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
@@ -162,11 +162,11 @@
             this.各種設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.itemdbBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.item_DataSet = new Item_dbEditer2020.data.item_DataSet();
+            this.Jname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Jname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemdbBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.item_DataSet = new Item_dbEditer2020.data.item_DataSet();
             this.panelItemList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelMain.SuspendLayout();
@@ -1160,12 +1160,12 @@
             // 
             // panelMainBaseCommon
             // 
-            this.panelMainBaseCommon.Controls.Add(this.comboBoxSex);
+            this.panelMainBaseCommon.Controls.Add(this.comboBoxGender);
             this.panelMainBaseCommon.Controls.Add(this.comboBoxType);
             this.panelMainBaseCommon.Controls.Add(this.textBoxWeight);
-            this.panelMainBaseCommon.Controls.Add(this.textBoxEquLv);
-            this.panelMainBaseCommon.Controls.Add(this.textBoxSellValue);
-            this.panelMainBaseCommon.Controls.Add(this.textBoxBuyValue);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxELv);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxSell);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxPrice);
             this.panelMainBaseCommon.Controls.Add(this.textBoxJob);
             this.panelMainBaseCommon.Controls.Add(this.textBoxJname);
             this.panelMainBaseCommon.Controls.Add(this.textBoxName);
@@ -1186,14 +1186,14 @@
             this.panelMainBaseCommon.Size = new System.Drawing.Size(233, 231);
             this.panelMainBaseCommon.TabIndex = 0;
             // 
-            // comboBoxSex
+            // comboBoxGender
             // 
-            this.comboBoxSex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSex.FormattingEnabled = true;
-            this.comboBoxSex.Location = new System.Drawing.Point(153, 167);
-            this.comboBoxSex.Name = "comboBoxSex";
-            this.comboBoxSex.Size = new System.Drawing.Size(57, 20);
-            this.comboBoxSex.TabIndex = 43;
+            this.comboBoxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxGender.FormattingEnabled = true;
+            this.comboBoxGender.Location = new System.Drawing.Point(153, 167);
+            this.comboBoxGender.Name = "comboBoxGender";
+            this.comboBoxGender.Size = new System.Drawing.Size(57, 20);
+            this.comboBoxGender.TabIndex = 43;
             // 
             // comboBoxType
             // 
@@ -1211,26 +1211,26 @@
             this.textBoxWeight.Size = new System.Drawing.Size(57, 19);
             this.textBoxWeight.TabIndex = 42;
             // 
-            // textBoxEquLv
+            // textBoxELv
             // 
-            this.textBoxEquLv.Location = new System.Drawing.Point(153, 195);
-            this.textBoxEquLv.Name = "textBoxEquLv";
-            this.textBoxEquLv.Size = new System.Drawing.Size(57, 19);
-            this.textBoxEquLv.TabIndex = 42;
+            this.textBoxELv.Location = new System.Drawing.Point(153, 195);
+            this.textBoxELv.Name = "textBoxELv";
+            this.textBoxELv.Size = new System.Drawing.Size(57, 19);
+            this.textBoxELv.TabIndex = 42;
             // 
-            // textBoxSellValue
+            // textBoxSell
             // 
-            this.textBoxSellValue.Location = new System.Drawing.Point(153, 138);
-            this.textBoxSellValue.Name = "textBoxSellValue";
-            this.textBoxSellValue.Size = new System.Drawing.Size(57, 19);
-            this.textBoxSellValue.TabIndex = 42;
+            this.textBoxSell.Location = new System.Drawing.Point(153, 138);
+            this.textBoxSell.Name = "textBoxSell";
+            this.textBoxSell.Size = new System.Drawing.Size(57, 19);
+            this.textBoxSell.TabIndex = 42;
             // 
-            // textBoxBuyValue
+            // textBoxPrice
             // 
-            this.textBoxBuyValue.Location = new System.Drawing.Point(56, 138);
-            this.textBoxBuyValue.Name = "textBoxBuyValue";
-            this.textBoxBuyValue.Size = new System.Drawing.Size(57, 19);
-            this.textBoxBuyValue.TabIndex = 42;
+            this.textBoxPrice.Location = new System.Drawing.Point(56, 138);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(57, 19);
+            this.textBoxPrice.TabIndex = 42;
             // 
             // textBoxJob
             // 
@@ -1451,15 +1451,13 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // itemdbBindingSource
+            // Jname
             // 
-            this.itemdbBindingSource.DataMember = "item_db";
-            this.itemdbBindingSource.DataSource = this.item_DataSet;
-            // 
-            // item_DataSet
-            // 
-            this.item_DataSet.DataSetName = "item_DataSet";
-            this.item_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.Jname.DataPropertyName = "Jname";
+            this.Jname.HeaderText = "Jname";
+            this.Jname.Name = "Jname";
+            this.Jname.ReadOnly = true;
+            this.Jname.Width = 160;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -1479,13 +1477,15 @@
             this.nameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.nameDataGridViewTextBoxColumn.Width = 152;
             // 
-            // Jname
+            // itemdbBindingSource
             // 
-            this.Jname.DataPropertyName = "Jname";
-            this.Jname.HeaderText = "Jname";
-            this.Jname.Name = "Jname";
-            this.Jname.ReadOnly = true;
-            this.Jname.Width = 160;
+            this.itemdbBindingSource.DataMember = "item_db";
+            this.itemdbBindingSource.DataSource = this.item_DataSet;
+            // 
+            // item_DataSet
+            // 
+            this.item_DataSet.DataSetName = "item_DataSet";
+            this.item_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Form1
             // 
@@ -1636,14 +1636,14 @@
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.TextBox textBoxWeight;
-        private System.Windows.Forms.TextBox textBoxEquLv;
-        private System.Windows.Forms.TextBox textBoxSellValue;
-        private System.Windows.Forms.TextBox textBoxBuyValue;
+        private System.Windows.Forms.TextBox textBoxELv;
+        private System.Windows.Forms.TextBox textBoxSell;
+        private System.Windows.Forms.TextBox textBoxPrice;
         private System.Windows.Forms.TextBox textBoxJob;
         private System.Windows.Forms.TextBox textBoxJname;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxId;
-        private System.Windows.Forms.ComboBox comboBoxSex;
+        private System.Windows.Forms.ComboBox comboBoxGender;
         private System.Windows.Forms.ComboBox comboBoxType;
         private System.Windows.Forms.ComboBox comboBoxFilter;
         private System.Windows.Forms.MenuStrip menuStrip1;

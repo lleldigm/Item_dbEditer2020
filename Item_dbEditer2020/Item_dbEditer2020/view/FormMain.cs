@@ -26,7 +26,7 @@ namespace Item_dbEditer2020
             //Comboboxの生成
             foreach(string type in LIST_TYPE) comboBoxType.Items.Add(type);
             foreach (string filter in LIST_FILTER) comboBoxFilter.Items.Add(filter);
-            foreach (string sex in LIST_SEX) comboBoxSex.Items.Add(sex);
+            foreach (string sex in LIST_SEX) comboBoxGender.Items.Add(sex);
 
 
 
@@ -57,14 +57,34 @@ namespace Item_dbEditer2020
 
             try
             {
+                DataRow row = item_DataSet.Tables[0].Rows[index];
                 //IDに数字が入っていれば実行
                 int i;
-                if (int.TryParse(item_DataSet.Tables[0].Rows[index].ItemArray[0].ToString(), out i))
+                if (int.TryParse(row.ItemArray[0].ToString(), out i))
                 { 
-                    textBoxId.Text = item_DataSet.Tables[0].Rows[index].ItemArray[0].ToString();
-                    textBoxName.Text = item_DataSet.Tables[0].Rows[index].ItemArray[1].ToString();
-                    textBoxJname.Text = item_DataSet.Tables[0].Rows[index].ItemArray[2].ToString();
-                    comboBoxType.SelectedIndex = int.Parse(item_DataSet.Tables[0].Rows[index].ItemArray[3].ToString());
+                    textBoxId.Text = row.ItemArray[0].ToString();                           //0.ID
+                    textBoxName.Text = row.ItemArray[1].ToString();                         //1.Name
+                    textBoxJname.Text = row.ItemArray[2].ToString();                        //2.Jname
+                    comboBoxType.SelectedIndex = int.Parse(row.ItemArray[3].ToString());    //3.Type
+                    textBoxPrice.Text = row.ItemArray[4].ToString();                        //4.Price (defaultt0)
+                    textBoxSell.Text = row.ItemArray[5].ToString();                         //5.Sell  (defaultt0)
+                    textBoxWeight.Text = row.ItemArray[6].ToString();                       //6.Weight
+                    //7.ATK
+                    //8.DEF
+                    //9.Range
+                    //10.Slot
+                    textBoxJob.Text = row.ItemArray[11].ToString();                         //11.Job
+                    comboBoxGender.SelectedIndex = int.Parse(row.ItemArray[12].ToString()); //12.Gender
+                    //13.Loc
+                    //14.wLV
+                    textBoxELv.Text = row.ItemArray[15].ToString();                         //15.eLV
+                    //16.View
+                    //17.Refine
+                    //18.UseScript
+                    //19.EquipScript
+                    //20.UnEquipScript
+
+
 
                 }
                 else

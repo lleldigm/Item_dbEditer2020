@@ -36,7 +36,6 @@
               <xs:element name="UseScript" msprop:Generator_ColumnVarNameInTable="columnUseScript" msprop:Generator_ColumnPropNameInRow="UseScript" msprop:Generator_ColumnPropNameInTable="UseScriptColumn" msprop:Generator_UserColumnName="UseScript" type="xs:string" minOccurs="0" />
               <xs:element name="EquipScript" msprop:Generator_ColumnVarNameInTable="columnEquipScript" msprop:Generator_ColumnPropNameInRow="EquipScript" msprop:Generator_ColumnPropNameInTable="EquipScriptColumn" msprop:Generator_UserColumnName="EquipScript" type="xs:string" minOccurs="0" />
               <xs:element name="UnEquipScript" msprop:Generator_ColumnVarNameInTable="columnUnEquipScript" msprop:Generator_ColumnPropNameInRow="UnEquipScript" msprop:Generator_ColumnPropNameInTable="UnEquipScriptColumn" msprop:Generator_UserColumnName="UnEquipScript" type="xs:string" minOccurs="0" />
-              <xs:element name="Mode" msprop:Generator_ColumnVarNameInTable="columnMode" msprop:Generator_ColumnPropNameInRow="Mode" msprop:Generator_ColumnPropNameInTable="ModeColumn" msprop:Generator_UserColumnName="Mode" type="xs:int" default="1" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

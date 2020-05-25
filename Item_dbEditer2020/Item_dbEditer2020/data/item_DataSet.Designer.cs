@@ -321,8 +321,6 @@ namespace Item_dbEditer2020.data {
             
             private global::System.Data.DataColumn columnUnEquipScript;
             
-            private global::System.Data.DataColumn columnMode;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public item_dbDataTable() {
@@ -526,14 +524,6 @@ namespace Item_dbEditer2020.data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ModeColumn {
-                get {
-                    return this.columnMode;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -590,8 +580,7 @@ namespace Item_dbEditer2020.data {
                         string Refine, 
                         string UseScript, 
                         string EquipScript, 
-                        string UnEquipScript, 
-                        int Mode) {
+                        string UnEquipScript) {
                 item_dbRow rowitem_dbRow = ((item_dbRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
@@ -614,8 +603,7 @@ namespace Item_dbEditer2020.data {
                         Refine,
                         UseScript,
                         EquipScript,
-                        UnEquipScript,
-                        Mode};
+                        UnEquipScript};
                 rowitem_dbRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowitem_dbRow);
                 return rowitem_dbRow;
@@ -659,7 +647,6 @@ namespace Item_dbEditer2020.data {
                 this.columnUseScript = base.Columns["UseScript"];
                 this.columnEquipScript = base.Columns["EquipScript"];
                 this.columnUnEquipScript = base.Columns["UnEquipScript"];
-                this.columnMode = base.Columns["Mode"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -707,9 +694,6 @@ namespace Item_dbEditer2020.data {
                 base.Columns.Add(this.columnEquipScript);
                 this.columnUnEquipScript = new global::System.Data.DataColumn("UnEquipScript", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUnEquipScript);
-                this.columnMode = new global::System.Data.DataColumn("Mode", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMode);
-                this.columnMode.DefaultValue = ((int)(1));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1188,22 +1172,6 @@ namespace Item_dbEditer2020.data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Mode {
-                get {
-                    try {
-                        return ((int)(this[this.tableitem_db.ModeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("テーブル \'item_db\' にある列 \'Mode\' の値は DBNull です。", e);
-                    }
-                }
-                set {
-                    this[this.tableitem_db.ModeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsIDNull() {
                 return this.IsNull(this.tableitem_db.IDColumn);
             }
@@ -1452,18 +1420,6 @@ namespace Item_dbEditer2020.data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetUnEquipScriptNull() {
                 this[this.tableitem_db.UnEquipScriptColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsModeNull() {
-                return this.IsNull(this.tableitem_db.ModeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetModeNull() {
-                this[this.tableitem_db.ModeColumn] = global::System.Convert.DBNull;
             }
         }
         

@@ -48,7 +48,6 @@ namespace Item_dbEditer2020.util
                 {
                     DataRow row =  dataSet.Tables[0].NewRow();
                     row[0] = sLine;
-                    //row[21] = LINE_MODE_COMMENT;
                     dataSet.Tables[0].Rows.Add(row);
                     
                 }
@@ -56,7 +55,6 @@ namespace Item_dbEditer2020.util
                 else if (string.IsNullOrEmpty(sLine))
                 {
                     DataRow row = dataSet.Tables[0].NewRow();
-                    //row[21] = LINE_MODE_SPACE;
                     dataSet.Tables[0].Rows.Add(row);
                 }
                 else
