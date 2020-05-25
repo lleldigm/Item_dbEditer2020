@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.panelItemList = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxFilter = new System.Windows.Forms.ComboBox();
             this.label41 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelMainScript = new System.Windows.Forms.Panel();
@@ -134,8 +134,8 @@
             this.textBoxSellValue = new System.Windows.Forms.TextBox();
             this.textBoxBuyValue = new System.Windows.Forms.TextBox();
             this.textBoxJob = new System.Windows.Forms.TextBox();
-            this.textBoxJName = new System.Windows.Forms.TextBox();
-            this.textBoxEName = new System.Windows.Forms.TextBox();
+            this.textBoxJname = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -162,11 +162,11 @@
             this.各種設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.itemdbBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.item_DataSet = new Item_dbEditer2020.data.item_DataSet();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Jname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelItemList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelMain.SuspendLayout();
@@ -186,7 +186,7 @@
             // panelItemList
             // 
             this.panelItemList.Controls.Add(this.dataGridView1);
-            this.panelItemList.Controls.Add(this.comboBox3);
+            this.panelItemList.Controls.Add(this.comboBoxFilter);
             this.panelItemList.Controls.Add(this.label41);
             this.panelItemList.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelItemList.Location = new System.Drawing.Point(0, 24);
@@ -205,7 +205,7 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
-            this.jNameDataGridViewTextBoxColumn});
+            this.Jname});
             this.dataGridView1.DataSource = this.itemdbBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(10, 31);
             this.dataGridView1.Name = "dataGridView1";
@@ -215,15 +215,16 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(364, 623);
             this.dataGridView1.TabIndex = 44;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // comboBox3
+            // comboBoxFilter
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(91, 5);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(57, 20);
-            this.comboBox3.TabIndex = 43;
+            this.comboBoxFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFilter.FormattingEnabled = true;
+            this.comboBoxFilter.Location = new System.Drawing.Point(91, 5);
+            this.comboBoxFilter.Name = "comboBoxFilter";
+            this.comboBoxFilter.Size = new System.Drawing.Size(118, 20);
+            this.comboBoxFilter.TabIndex = 43;
             // 
             // label41
             // 
@@ -1166,8 +1167,8 @@
             this.panelMainBaseCommon.Controls.Add(this.textBoxSellValue);
             this.panelMainBaseCommon.Controls.Add(this.textBoxBuyValue);
             this.panelMainBaseCommon.Controls.Add(this.textBoxJob);
-            this.panelMainBaseCommon.Controls.Add(this.textBoxJName);
-            this.panelMainBaseCommon.Controls.Add(this.textBoxEName);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxJname);
+            this.panelMainBaseCommon.Controls.Add(this.textBoxName);
             this.panelMainBaseCommon.Controls.Add(this.textBoxId);
             this.panelMainBaseCommon.Controls.Add(this.label9);
             this.panelMainBaseCommon.Controls.Add(this.label8);
@@ -1238,19 +1239,19 @@
             this.textBoxJob.Size = new System.Drawing.Size(100, 19);
             this.textBoxJob.TabIndex = 42;
             // 
-            // textBoxJName
+            // textBoxJname
             // 
-            this.textBoxJName.Location = new System.Drawing.Point(56, 56);
-            this.textBoxJName.Name = "textBoxJName";
-            this.textBoxJName.Size = new System.Drawing.Size(100, 19);
-            this.textBoxJName.TabIndex = 40;
+            this.textBoxJname.Location = new System.Drawing.Point(56, 56);
+            this.textBoxJname.Name = "textBoxJname";
+            this.textBoxJname.Size = new System.Drawing.Size(100, 19);
+            this.textBoxJname.TabIndex = 40;
             // 
-            // textBoxEName
+            // textBoxName
             // 
-            this.textBoxEName.Location = new System.Drawing.Point(56, 31);
-            this.textBoxEName.Name = "textBoxEName";
-            this.textBoxEName.Size = new System.Drawing.Size(100, 19);
-            this.textBoxEName.TabIndex = 40;
+            this.textBoxName.Location = new System.Drawing.Point(56, 31);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(100, 19);
+            this.textBoxName.TabIndex = 40;
             // 
             // textBoxId
             // 
@@ -1450,6 +1451,16 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // itemdbBindingSource
+            // 
+            this.itemdbBindingSource.DataMember = "item_db";
+            this.itemdbBindingSource.DataSource = this.item_DataSet;
+            // 
+            // item_DataSet
+            // 
+            this.item_DataSet.DataSetName = "item_DataSet";
+            this.item_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
@@ -1466,26 +1477,15 @@
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.ReadOnly = true;
             this.nameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.nameDataGridViewTextBoxColumn.Width = 130;
+            this.nameDataGridViewTextBoxColumn.Width = 152;
             // 
-            // jNameDataGridViewTextBoxColumn
+            // Jname
             // 
-            this.jNameDataGridViewTextBoxColumn.DataPropertyName = "JName";
-            this.jNameDataGridViewTextBoxColumn.HeaderText = "JName";
-            this.jNameDataGridViewTextBoxColumn.Name = "jNameDataGridViewTextBoxColumn";
-            this.jNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.jNameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.jNameDataGridViewTextBoxColumn.Width = 182;
-            // 
-            // itemdbBindingSource
-            // 
-            this.itemdbBindingSource.DataMember = "item_db";
-            this.itemdbBindingSource.DataSource = this.item_DataSet;
-            // 
-            // item_DataSet
-            // 
-            this.item_DataSet.DataSetName = "item_DataSet";
-            this.item_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.Jname.DataPropertyName = "Jname";
+            this.Jname.HeaderText = "Jname";
+            this.Jname.Name = "Jname";
+            this.Jname.ReadOnly = true;
+            this.Jname.Width = 160;
             // 
             // Form1
             // 
@@ -1640,12 +1640,12 @@
         private System.Windows.Forms.TextBox textBoxSellValue;
         private System.Windows.Forms.TextBox textBoxBuyValue;
         private System.Windows.Forms.TextBox textBoxJob;
-        private System.Windows.Forms.TextBox textBoxJName;
-        private System.Windows.Forms.TextBox textBoxEName;
+        private System.Windows.Forms.TextBox textBoxJname;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.ComboBox comboBoxSex;
         private System.Windows.Forms.ComboBox comboBoxType;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBoxFilter;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 編集EToolStripMenuItem;
@@ -1666,7 +1666,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn jNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Jname;
     }
 }
 
