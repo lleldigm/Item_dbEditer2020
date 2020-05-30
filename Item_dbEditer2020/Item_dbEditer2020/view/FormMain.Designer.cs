@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.panelItemList = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Jname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.itemdbBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.item_DataSet = new Item_dbEditer2020.data.item_DataSet();
             this.comboBoxFilter = new System.Windows.Forms.ComboBox();
             this.label41 = new System.Windows.Forms.Label();
             this.panelMain = new System.Windows.Forms.Panel();
@@ -94,38 +99,6 @@
             this.label92 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.panelMainBase = new System.Windows.Forms.Panel();
-            this.panelMainBaseEquip = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.panelMainBaseCommon = new System.Windows.Forms.Panel();
             this.comboBoxGender = new System.Windows.Forms.ComboBox();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
@@ -162,13 +135,60 @@
             this.各種設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.Jname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.itemdbBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.item_DataSet = new Item_dbEditer2020.data.item_DataSet();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.panelMainBaseEquip = new System.Windows.Forms.Panel();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.checkBox19 = new System.Windows.Forms.CheckBox();
+            this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.checkBox22 = new System.Windows.Forms.CheckBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.line4 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.panelItemList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemdbBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).BeginInit();
             this.panelMain.SuspendLayout();
             this.panelMainScript.SuspendLayout();
             this.panelMainDb2.SuspendLayout();
@@ -176,11 +196,9 @@
             this.panelMainArrow.SuspendLayout();
             this.panelMainCard.SuspendLayout();
             this.panelMainBase.SuspendLayout();
-            this.panelMainBaseEquip.SuspendLayout();
             this.panelMainBaseCommon.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.itemdbBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).BeginInit();
+            this.panelMainBaseEquip.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelItemList
@@ -213,9 +231,45 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowTemplate.Height = 21;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(364, 623);
+            this.dataGridView1.Size = new System.Drawing.Size(364, 644);
             this.dataGridView1.TabIndex = 44;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.iDDataGridViewTextBoxColumn.Width = 50;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.nameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.nameDataGridViewTextBoxColumn.Width = 152;
+            // 
+            // Jname
+            // 
+            this.Jname.DataPropertyName = "Jname";
+            this.Jname.HeaderText = "Jname";
+            this.Jname.Name = "Jname";
+            this.Jname.ReadOnly = true;
+            this.Jname.Width = 160;
+            // 
+            // itemdbBindingSource
+            // 
+            this.itemdbBindingSource.DataMember = "item_db";
+            this.itemdbBindingSource.DataSource = this.item_DataSet;
+            // 
+            // item_DataSet
+            // 
+            this.item_DataSet.DataSetName = "item_DataSet";
+            this.item_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // comboBoxFilter
             // 
@@ -251,6 +305,7 @@
             // 
             // panelMainScript
             // 
+            this.panelMainScript.Controls.Add(this.label21);
             this.panelMainScript.Controls.Add(this.label44);
             this.panelMainScript.Controls.Add(this.label43);
             this.panelMainScript.Controls.Add(this.label42);
@@ -263,7 +318,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(20, 66);
+            this.label44.Location = new System.Drawing.Point(16, 63);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(63, 12);
             this.label44.TabIndex = 2;
@@ -272,7 +327,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(18, 40);
+            this.label43.Location = new System.Drawing.Point(16, 38);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(59, 12);
             this.label43.TabIndex = 1;
@@ -314,6 +369,7 @@
             this.panelMainDb2.Controls.Add(this.label47);
             this.panelMainDb2.Controls.Add(this.label46);
             this.panelMainDb2.Controls.Add(this.label45);
+            this.panelMainDb2.Controls.Add(this.label23);
             this.panelMainDb2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainDb2.Location = new System.Drawing.Point(233, 126);
             this.panelMainDb2.Name = "panelMainDb2";
@@ -554,6 +610,7 @@
             this.panelMainValue.Controls.Add(this.label72);
             this.panelMainValue.Controls.Add(this.label71);
             this.panelMainValue.Controls.Add(this.label70);
+            this.panelMainValue.Controls.Add(this.label24);
             this.panelMainValue.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainValue.Location = new System.Drawing.Point(233, 407);
             this.panelMainValue.Name = "panelMainValue";
@@ -632,6 +689,7 @@
             this.panelMainArrow.Controls.Add(this.label85);
             this.panelMainArrow.Controls.Add(this.label86);
             this.panelMainArrow.Controls.Add(this.label84);
+            this.panelMainArrow.Controls.Add(this.label25);
             this.panelMainArrow.Controls.Add(this.label83);
             this.panelMainArrow.Controls.Add(this.label82);
             this.panelMainArrow.Controls.Add(this.label81);
@@ -778,6 +836,7 @@
             this.panelMainCard.Controls.Add(this.label93);
             this.panelMainCard.Controls.Add(this.label92);
             this.panelMainCard.Controls.Add(this.label91);
+            this.panelMainCard.Controls.Add(this.label26);
             this.panelMainCard.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelMainCard.Location = new System.Drawing.Point(233, 611);
             this.panelMainCard.Name = "panelMainCard";
@@ -838,325 +897,6 @@
             this.panelMainBase.Name = "panelMainBase";
             this.panelMainBase.Size = new System.Drawing.Size(233, 681);
             this.panelMainBase.TabIndex = 0;
-            // 
-            // panelMainBaseEquip
-            // 
-            this.panelMainBaseEquip.Controls.Add(this.label27);
-            this.panelMainBaseEquip.Controls.Add(this.label18);
-            this.panelMainBaseEquip.Controls.Add(this.label40);
-            this.panelMainBaseEquip.Controls.Add(this.label39);
-            this.panelMainBaseEquip.Controls.Add(this.label38);
-            this.panelMainBaseEquip.Controls.Add(this.label37);
-            this.panelMainBaseEquip.Controls.Add(this.label36);
-            this.panelMainBaseEquip.Controls.Add(this.label35);
-            this.panelMainBaseEquip.Controls.Add(this.label34);
-            this.panelMainBaseEquip.Controls.Add(this.label33);
-            this.panelMainBaseEquip.Controls.Add(this.label32);
-            this.panelMainBaseEquip.Controls.Add(this.label31);
-            this.panelMainBaseEquip.Controls.Add(this.label30);
-            this.panelMainBaseEquip.Controls.Add(this.label29);
-            this.panelMainBaseEquip.Controls.Add(this.label28);
-            this.panelMainBaseEquip.Controls.Add(this.label26);
-            this.panelMainBaseEquip.Controls.Add(this.label25);
-            this.panelMainBaseEquip.Controls.Add(this.label24);
-            this.panelMainBaseEquip.Controls.Add(this.label23);
-            this.panelMainBaseEquip.Controls.Add(this.label22);
-            this.panelMainBaseEquip.Controls.Add(this.label21);
-            this.panelMainBaseEquip.Controls.Add(this.label20);
-            this.panelMainBaseEquip.Controls.Add(this.label19);
-            this.panelMainBaseEquip.Controls.Add(this.label17);
-            this.panelMainBaseEquip.Controls.Add(this.label16);
-            this.panelMainBaseEquip.Controls.Add(this.label15);
-            this.panelMainBaseEquip.Controls.Add(this.label14);
-            this.panelMainBaseEquip.Controls.Add(this.label13);
-            this.panelMainBaseEquip.Controls.Add(this.label12);
-            this.panelMainBaseEquip.Controls.Add(this.label11);
-            this.panelMainBaseEquip.Controls.Add(this.label10);
-            this.panelMainBaseEquip.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMainBaseEquip.Location = new System.Drawing.Point(0, 231);
-            this.panelMainBaseEquip.Name = "panelMainBaseEquip";
-            this.panelMainBaseEquip.Size = new System.Drawing.Size(233, 450);
-            this.panelMainBaseEquip.TabIndex = 1;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(6, 261);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(61, 12);
-            this.label27.TabIndex = 32;
-            this.label27.Text = "アクセサリ左";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(20, 100);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(29, 12);
-            this.label18.TabIndex = 31;
-            this.label18.Text = "射程";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(101, 378);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(97, 12);
-            this.label40.TabIndex = 30;
-            this.label40.Text = "アクセサリ右シャドウ";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(4, 378);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(97, 12);
-            this.label39.TabIndex = 29;
-            this.label39.Text = "アクセサリ左シャドウ";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(112, 362);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(79, 12);
-            this.label38.TabIndex = 28;
-            this.label38.Text = "シューズシャドウ";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(26, 362);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(80, 12);
-            this.label37.TabIndex = 27;
-            this.label37.Text = "シールドシャドウ";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(109, 346);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(76, 12);
-            this.label36.TabIndex = 26;
-            this.label36.Text = "ウェポンシャドウ";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(24, 346);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(79, 12);
-            this.label35.TabIndex = 25;
-            this.label35.Text = "アーマーシャドウ";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(20, 330);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(85, 12);
-            this.label34.TabIndex = 24;
-            this.label34.Text = "コスチュームFloor";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(117, 314);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(71, 12);
-            this.label33.TabIndex = 23;
-            this.label33.Text = "コスチューム肩";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(15, 314);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(95, 12);
-            this.label32.TabIndex = 22;
-            this.label32.Text = "コスチューム頭下段";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(99, 290);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(95, 12);
-            this.label31.TabIndex = 21;
-            this.label31.Text = "コスチューム頭中段";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(1, 290);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(95, 12);
-            this.label30.TabIndex = 20;
-            this.label30.Text = "コスチューム頭上段";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(136, 261);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(41, 12);
-            this.label29.TabIndex = 19;
-            this.label29.Text = "label29";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(69, 261);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(61, 12);
-            this.label28.TabIndex = 18;
-            this.label28.Text = "アクセサリ右";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(121, 230);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(17, 12);
-            this.label26.TabIndex = 16;
-            this.label26.Text = "足";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(63, 230);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(17, 12);
-            this.label25.TabIndex = 15;
-            this.label25.Text = "体";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(4, 230);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(17, 12);
-            this.label24.TabIndex = 14;
-            this.label24.Text = "肩";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(63, 202);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(103, 12);
-            this.label23.TabIndex = 13;
-            this.label23.Text = "左手(盾/両手武器)";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(10, 202);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(29, 12);
-            this.label22.TabIndex = 12;
-            this.label22.Text = "右手";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(121, 171);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 12);
-            this.label21.TabIndex = 11;
-            this.label21.Text = "頭下段";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(63, 172);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 12);
-            this.label20.TabIndex = 10;
-            this.label20.Text = "頭中段";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(8, 172);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 12);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "頭上段";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.label17.Location = new System.Drawing.Point(105, 71);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(42, 12);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "View値";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(18, 71);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(36, 12);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "MDEF";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(107, 53);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(29, 12);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "精錬";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(18, 53);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(27, 12);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "DEF";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(104, 30);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 12);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "武器レベル";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 30);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 12);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "MATK";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(107, 7);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(25, 12);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Slot";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(18, 7);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(27, 12);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "ATK";
             // 
             // panelMainBaseCommon
             // 
@@ -1451,41 +1191,511 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // Jname
+            // label10
             // 
-            this.Jname.DataPropertyName = "Jname";
-            this.Jname.HeaderText = "Jname";
-            this.Jname.Name = "Jname";
-            this.Jname.ReadOnly = true;
-            this.Jname.Width = 160;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(5, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(27, 12);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "ATK";
             // 
-            // iDDataGridViewTextBoxColumn
+            // label11
             // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.iDDataGridViewTextBoxColumn.Width = 50;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(121, 38);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(25, 12);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Slot";
             // 
-            // nameDataGridViewTextBoxColumn
+            // label12
             // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.nameDataGridViewTextBoxColumn.Width = 152;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(5, 60);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(36, 12);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "MATK";
             // 
-            // itemdbBindingSource
+            // label13
             // 
-            this.itemdbBindingSource.DataMember = "item_db";
-            this.itemdbBindingSource.DataSource = this.item_DataSet;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(103, 61);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(58, 12);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "武器レベル";
             // 
-            // item_DataSet
+            // label14
             // 
-            this.item_DataSet.DataSetName = "item_DataSet";
-            this.item_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(5, 82);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(27, 12);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "DEF";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(121, 83);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(29, 12);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "精錬";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(5, 104);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(36, 12);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "MDEF";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.label17.Location = new System.Drawing.Point(114, 104);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(42, 12);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "View値";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(45, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(57, 19);
+            this.textBox1.TabIndex = 42;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(45, 57);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(57, 19);
+            this.textBox2.TabIndex = 42;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(45, 79);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(57, 19);
+            this.textBox3.TabIndex = 42;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(45, 101);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(57, 19);
+            this.textBox4.TabIndex = 42;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(167, 102);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(57, 19);
+            this.textBox5.TabIndex = 42;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(45, 123);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(57, 19);
+            this.textBox6.TabIndex = 42;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(5, 126);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(29, 12);
+            this.label18.TabIndex = 31;
+            this.label18.Text = "射程";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(167, 35);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(57, 20);
+            this.comboBox1.TabIndex = 43;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(167, 58);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(57, 20);
+            this.comboBox2.TabIndex = 43;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(167, 79);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(57, 20);
+            this.comboBox3.TabIndex = 43;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(4, 182);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(60, 16);
+            this.checkBox1.TabIndex = 44;
+            this.checkBox1.Text = "頭上段";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(86, 182);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(60, 16);
+            this.checkBox2.TabIndex = 44;
+            this.checkBox2.Text = "頭中段";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(164, 182);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(60, 16);
+            this.checkBox3.TabIndex = 44;
+            this.checkBox3.Text = "頭中段";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(4, 208);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(48, 16);
+            this.checkBox4.TabIndex = 44;
+            this.checkBox4.Text = "右手";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(4, 234);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(36, 16);
+            this.checkBox6.TabIndex = 44;
+            this.checkBox6.Text = "肩";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(4, 260);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(80, 16);
+            this.checkBox9.TabIndex = 44;
+            this.checkBox9.Text = "アクセサリ左";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(86, 260);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(80, 16);
+            this.checkBox10.TabIndex = 44;
+            this.checkBox10.Text = "アクセサリ右";
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(164, 260);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(54, 16);
+            this.checkBox11.TabIndex = 44;
+            this.checkBox11.Text = "矢・弾";
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(86, 234);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(36, 16);
+            this.checkBox7.TabIndex = 44;
+            this.checkBox7.Text = "体";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(164, 234);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(36, 16);
+            this.checkBox8.TabIndex = 44;
+            this.checkBox8.Text = "足";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(86, 208);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(122, 16);
+            this.checkBox5.TabIndex = 44;
+            this.checkBox5.Text = "左手(盾/両手武器)";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // panelMainBaseEquip
+            // 
+            this.panelMainBaseEquip.Controls.Add(this.checkBox5);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox8);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox7);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox11);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox10);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox13);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox22);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox20);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox21);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox19);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox18);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox17);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox16);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox15);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox14);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox12);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox9);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox6);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox4);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox3);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox2);
+            this.panelMainBaseEquip.Controls.Add(this.checkBox1);
+            this.panelMainBaseEquip.Controls.Add(this.comboBox3);
+            this.panelMainBaseEquip.Controls.Add(this.comboBox2);
+            this.panelMainBaseEquip.Controls.Add(this.comboBox1);
+            this.panelMainBaseEquip.Controls.Add(this.label18);
+            this.panelMainBaseEquip.Controls.Add(this.textBox6);
+            this.panelMainBaseEquip.Controls.Add(this.textBox5);
+            this.panelMainBaseEquip.Controls.Add(this.textBox4);
+            this.panelMainBaseEquip.Controls.Add(this.textBox3);
+            this.panelMainBaseEquip.Controls.Add(this.textBox2);
+            this.panelMainBaseEquip.Controls.Add(this.textBox1);
+            this.panelMainBaseEquip.Controls.Add(this.label17);
+            this.panelMainBaseEquip.Controls.Add(this.label16);
+            this.panelMainBaseEquip.Controls.Add(this.label15);
+            this.panelMainBaseEquip.Controls.Add(this.label14);
+            this.panelMainBaseEquip.Controls.Add(this.label13);
+            this.panelMainBaseEquip.Controls.Add(this.label12);
+            this.panelMainBaseEquip.Controls.Add(this.label11);
+            this.panelMainBaseEquip.Controls.Add(this.label20);
+            this.panelMainBaseEquip.Controls.Add(this.label19);
+            this.panelMainBaseEquip.Controls.Add(this.label10);
+            this.panelMainBaseEquip.Controls.Add(this.label22);
+            this.panelMainBaseEquip.Controls.Add(this.line4);
+            this.panelMainBaseEquip.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMainBaseEquip.Location = new System.Drawing.Point(0, 231);
+            this.panelMainBaseEquip.Name = "panelMainBaseEquip";
+            this.panelMainBaseEquip.Size = new System.Drawing.Size(233, 450);
+            this.panelMainBaseEquip.TabIndex = 1;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(4, 298);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(114, 16);
+            this.checkBox12.TabIndex = 44;
+            this.checkBox12.Text = "コスチューム頭上段";
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Location = new System.Drawing.Point(116, 298);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(114, 16);
+            this.checkBox13.TabIndex = 44;
+            this.checkBox13.Text = "コスチューム頭中段";
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.Location = new System.Drawing.Point(4, 318);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(114, 16);
+            this.checkBox14.TabIndex = 44;
+            this.checkBox14.Text = "コスチューム頭下段";
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Location = new System.Drawing.Point(116, 318);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(90, 16);
+            this.checkBox15.TabIndex = 44;
+            this.checkBox15.Text = "コスチューム肩";
+            this.checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.Location = new System.Drawing.Point(4, 338);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(104, 16);
+            this.checkBox16.TabIndex = 44;
+            this.checkBox16.Text = "コスチュームFloor";
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // checkBox17
+            // 
+            this.checkBox17.AutoSize = true;
+            this.checkBox17.Location = new System.Drawing.Point(4, 358);
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.Size = new System.Drawing.Size(98, 16);
+            this.checkBox17.TabIndex = 44;
+            this.checkBox17.Text = "アーマーシャドウ";
+            this.checkBox17.UseVisualStyleBackColor = true;
+            // 
+            // checkBox18
+            // 
+            this.checkBox18.AutoSize = true;
+            this.checkBox18.Location = new System.Drawing.Point(116, 338);
+            this.checkBox18.Name = "checkBox18";
+            this.checkBox18.Size = new System.Drawing.Size(95, 16);
+            this.checkBox18.TabIndex = 44;
+            this.checkBox18.Text = "ウェポンシャドウ";
+            this.checkBox18.UseVisualStyleBackColor = true;
+            // 
+            // checkBox19
+            // 
+            this.checkBox19.AutoSize = true;
+            this.checkBox19.Location = new System.Drawing.Point(4, 378);
+            this.checkBox19.Name = "checkBox19";
+            this.checkBox19.Size = new System.Drawing.Size(99, 16);
+            this.checkBox19.TabIndex = 44;
+            this.checkBox19.Text = "シールドシャドウ";
+            this.checkBox19.UseVisualStyleBackColor = true;
+            // 
+            // checkBox20
+            // 
+            this.checkBox20.AutoSize = true;
+            this.checkBox20.Location = new System.Drawing.Point(116, 358);
+            this.checkBox20.Name = "checkBox20";
+            this.checkBox20.Size = new System.Drawing.Size(98, 16);
+            this.checkBox20.TabIndex = 44;
+            this.checkBox20.Text = "シューズシャドウ";
+            this.checkBox20.UseVisualStyleBackColor = true;
+            // 
+            // checkBox21
+            // 
+            this.checkBox21.AutoSize = true;
+            this.checkBox21.Location = new System.Drawing.Point(4, 398);
+            this.checkBox21.Name = "checkBox21";
+            this.checkBox21.Size = new System.Drawing.Size(116, 16);
+            this.checkBox21.TabIndex = 44;
+            this.checkBox21.Text = "アクセサリ左シャドウ";
+            this.checkBox21.UseVisualStyleBackColor = true;
+            // 
+            // checkBox22
+            // 
+            this.checkBox22.AutoSize = true;
+            this.checkBox22.Location = new System.Drawing.Point(116, 376);
+            this.checkBox22.Name = "checkBox22";
+            this.checkBox22.Size = new System.Drawing.Size(116, 16);
+            this.checkBox22.TabIndex = 44;
+            this.checkBox22.Text = "アクセサリ右シャドウ";
+            this.checkBox22.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("MS UI Gothic", 10F);
+            this.label19.Location = new System.Drawing.Point(7, 16);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(78, 14);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "武器 / 防具";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("MS UI Gothic", 10F);
+            this.label20.Location = new System.Drawing.Point(4, 159);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(91, 14);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "装備箇所設定";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(16, 88);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(77, 12);
+            this.label21.TabIndex = 2;
+            this.label21.Text = "UnEquipScript";
+            // 
+            // line4
+            // 
+            this.line4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.line4.Font = new System.Drawing.Font("MS UI Gothic", 1F);
+            this.line4.Location = new System.Drawing.Point(4, 24);
+            this.line4.Name = "line4";
+            this.line4.Size = new System.Drawing.Size(226, 130);
+            this.line4.TabIndex = 45;
+            // 
+            // label22
+            // 
+            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label22.Font = new System.Drawing.Font("MS UI Gothic", 1F);
+            this.label22.Location = new System.Drawing.Point(1, 159);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(232, 285);
+            this.label22.TabIndex = 45;
+            // 
+            // label23
+            // 
+            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label23.Font = new System.Drawing.Font("MS UI Gothic", 1F);
+            this.label23.Location = new System.Drawing.Point(3, 3);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(620, 259);
+            this.label23.TabIndex = 45;
+            // 
+            // label24
+            // 
+            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label24.Font = new System.Drawing.Font("MS UI Gothic", 1F);
+            this.label24.Location = new System.Drawing.Point(6, 6);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(620, 71);
+            this.label24.TabIndex = 45;
+            // 
+            // label25
+            // 
+            this.label25.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label25.Font = new System.Drawing.Font("MS UI Gothic", 1F);
+            this.label25.Location = new System.Drawing.Point(3, 5);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(620, 106);
+            this.label25.TabIndex = 45;
+            // 
+            // label26
+            // 
+            this.label26.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label26.Font = new System.Drawing.Font("MS UI Gothic", 1F);
+            this.label26.Location = new System.Drawing.Point(6, 4);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(620, 60);
+            this.label26.TabIndex = 45;
             // 
             // Form1
             // 
@@ -1502,6 +1712,8 @@
             this.panelItemList.ResumeLayout(false);
             this.panelItemList.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemdbBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).EndInit();
             this.panelMain.ResumeLayout(false);
             this.panelMainScript.ResumeLayout(false);
             this.panelMainScript.PerformLayout();
@@ -1514,14 +1726,12 @@
             this.panelMainCard.ResumeLayout(false);
             this.panelMainCard.PerformLayout();
             this.panelMainBase.ResumeLayout(false);
-            this.panelMainBaseEquip.ResumeLayout(false);
-            this.panelMainBaseEquip.PerformLayout();
             this.panelMainBaseCommon.ResumeLayout(false);
             this.panelMainBaseCommon.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.itemdbBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.item_DataSet)).EndInit();
+            this.panelMainBaseEquip.ResumeLayout(false);
+            this.panelMainBaseEquip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1537,7 +1747,6 @@
         private System.Windows.Forms.Panel panelMainArrow;
         private System.Windows.Forms.Panel panelMainCard;
         private System.Windows.Forms.Panel panelMainBase;
-        private System.Windows.Forms.Panel panelMainBaseEquip;
         private System.Windows.Forms.Panel panelMainBaseCommon;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -1549,37 +1758,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label0;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
@@ -1667,6 +1845,56 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Jname;
+        private System.Windows.Forms.Panel panelMainBaseEquip;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox checkBox22;
+        private System.Windows.Forms.CheckBox checkBox20;
+        private System.Windows.Forms.CheckBox checkBox21;
+        private System.Windows.Forms.CheckBox checkBox19;
+        private System.Windows.Forms.CheckBox checkBox18;
+        private System.Windows.Forms.CheckBox checkBox17;
+        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label line4;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
     }
 }
 
